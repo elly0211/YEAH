@@ -1,0 +1,6 @@
+        Scanner sc = new Scanner(System.in);
+
+          System.out.println("알려주셔서 감사합니다~");
+          System.out.println("집 가고 싶다");
+          System.out.println("일본어가 더 쉬워요 선생님");
+          System.out.println("마라탕이랑 꿔바로우 먹었더니 잠이 오네 솔솔~");
