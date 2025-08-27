@@ -1,0 +1,23 @@
+import random
+
+print("=== 숫자 맞추기 게임 ===")
+answer = random.randint(1, 100)
+
+while True:
+    guess = input("1부터 100 사이의 숫자를 입력하세요 (종료:q): ")
+    if guess.lower() == "q":
+        print("게임을 종료합니다.")
+        break
+    
+    if not guess.isdigit():
+        print("숫자를 입력하세요!")
+        continue
+
+    guess = int(guess)
+    if guess == answer:
+        print("정답입니다! 🎉")
+        break
+    elif guess < answer:
+        print("업! (더 큰 수)")
+    else:
+        print("다운! (더 작은 수)")
